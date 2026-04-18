@@ -22,6 +22,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-accent-text: var(--accent-text);
 
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
@@ -48,6 +49,7 @@
   --border: #e2e8f0;
   --input: #e2e8f0;
   --ring: #2563eb;
+  --accent-text: #2563eb;
   --radius: 0.75rem;
 }
 
@@ -71,6 +73,7 @@
   --border: #334155;
   --input: #334155;
   --ring: #3b82f6;
+  --accent-text: #3b82f6;
 }
 
 @layer base {
@@ -95,6 +98,25 @@
     outline: 2px solid var(--ring);
     outline-offset: 2px;
   }
+}
+
+/* Page Layout Wrapper */
+.page-wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--background);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Restore section-full */
+.section-full {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 80px;
 }
 
 /* SEO & Accessibility: Screen reader only utility */

@@ -27,14 +27,14 @@ export default function FloatingActions() {
                 href={(portfolioData as any).cvUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 md:w-14 md:h-14 bg-linear-to-tr from-blue-700 to-blue-500 text-white rounded-xl flex items-center justify-center cursor-pointer border border-white/20 shadow-xl transition-all z-10"
+                className="w-11 h-11 md:w-14 md:h-14 bg-linear-to-tr from-primary to-primary/80 text-primary-foreground rounded-xl flex items-center justify-center cursor-pointer border border-white/20 shadow-xl transition-all z-10"
                 aria-label="Download CV"
                 title="Download CV"
             >
                 <Download className="w-4 h-4 md:w-6 md:h-6" />
             </motion.a>
 
-            {/* Chat/Contact s */}
+            {/* Chat/Contact Button */}
             <motion.a
                 animate={{
                     y: [0, -8, 0],
@@ -53,7 +53,7 @@ export default function FloatingActions() {
                 whileHover={{ scale: 1.08, rotate: -5 }}
                 whileTap={{ scale: 0.92 }}
                 href="#contact"
-                className="w-11 h-11 md:w-14 md:h-14 bg-linear-to-tr from-indigo-600 to-blue-600 text-white rounded-xl flex items-center justify-center cursor-pointer border border-white/20 shadow-xl transition-all"
+                className="w-11 h-11 md:w-14 md:h-14 bg-linear-to-tr from-primary/80 to-primary text-primary-foreground rounded-xl flex items-center justify-center cursor-pointer border border-white/20 shadow-xl transition-all"
                 aria-label="Contact Me"
                 title="Contact Me"
             >
